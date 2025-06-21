@@ -20,6 +20,19 @@
 # production
 /build
 
+# Supabase CLI 本地配置
+.supabase/
+
+# 数据库备份
+*.dump
+*.sql
+!supabase/migrations/*.sql
+
+# 编辑器/IDE
+.vscode/
+.idea/
+*.swp
+
 # misc
 .DS_Store
 *.pem
@@ -39,3 +52,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 静态资源缓存
+.cache/
